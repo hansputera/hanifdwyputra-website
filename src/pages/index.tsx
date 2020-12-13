@@ -22,13 +22,13 @@ import { Footer } from '../components/Footer'
 import React from 'react';
 
 const Index = () => {
-  let sensor: string;
-  let objectWord: { clue: string; jawaban: string; };
+  var sensor: string;
+  var objectWord: { clue: string; jawaban: string; };
 
   function generateAsk() {
   const random = Math.floor(Math.random() * Object.keys(words).length);
   sensor = Object.keys(words)[random];
-  objectWord = words[sensor];
+  objectWord = JSON.parse(JSON.stringify(words))[sensor];
 }
 
   generateAsk();
@@ -89,18 +89,18 @@ const Index = () => {
       {/* End Telegram */}
 
 
-      {/* Gallery Content */}
+      {/* Fun Content */}
 
       <Flex justifyContent="center" alignItems="center" height="15vh">
          <ChakraHead fontSize="5vw">🤣 Fun Games</ChakraHead>
       </Flex>
 
       <FormControl id="inputWord" isRequired>
-      <FormLabel id="input">Input: {objectWord!.clue} <Kbd>{sensor}</Kbd></FormLabel>
+      <FormLabel id="input">Input: {objectWord!.clue} <Kbd>{sensor!}</Kbd></FormLabel>
       <Input onChange={handleChange} placeholder="Lengkapi kata yang diatas disini!" id="kata" size="sm" />
       </FormControl>
 
-      {/* End Gallery Content */}
+      {/* End Fun Content */}
 
       {/* <List spacing={3} my={0}>
         <ListItem>
