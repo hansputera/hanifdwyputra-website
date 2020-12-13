@@ -63,25 +63,23 @@ const Index = () => {
   return (
   <div>
     <Head>
-    <link rel="icon" href="https://iili.io/KI0WWg.md.png" />
+    	<link rel="icon" href="https://iili.io/KI0WWg.md.png" />
 	<meta name="title" content="Hanif Website" />
 	<meta name="description" content="Hanif Dwy Putra Belajar Website." />
 	<meta name="type" content="website" />
 	<meta name="language" content="English">
 	<meta name="author" content="Hanif" />
 	<meta content="#bdbfc7" name="theme-color" />
-    <meta content="#bdbfc7" name="msapplication-navbutton-color" />
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hansputera.me">
-    <meta property="og:title" content="Hanif Website">
-    <meta property="og:description" content="Hanif Dwy Putra Belajar Website.">
-    <meta property="og:image" content="https://iili.io/KI0WWg.md.png">
-    <meta property="og:image:alt" content="Website banner">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="628">
-
-    <title>Putra | hansputera</title>
+    	<meta content="#bdbfc7" name="msapplication-navbutton-color" />
+    	<meta property="og:type" content="website">
+    	<meta property="og:url" content="https://hansputera.me">
+    	<meta property="og:title" content="Hanif Website">
+    	<meta property="og:description" content="Hanif Dwy Putra Belajar Website.">
+    	<meta property="og:image" content="https://iili.io/KI0WWg.md.png">
+    	<meta property="og:image:alt" content="Website banner">
+    	<meta property="og:image:width" content="1200">
+    	<meta property="og:image:height" content="628">
+    	<title>Putra | hansputera</title>
   </Head>
   <Container height="100vh">
     <Hero />
